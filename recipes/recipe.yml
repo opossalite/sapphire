@@ -18,31 +18,23 @@ modules:
         destination: / # copies files/system/* (* means everything inside it) into your image's root folder /
 
   - type: dnf
-    repos:
-      copr:
-        - atim/starship
+    #repos:
+    #  copr:
+    #    - atim/starship
     install:
       packages:
-        # compositor + shell
+        - distrobox
+        - kitty
+        - neovim
         - niri
         - noctalia
-        - xwayland-satellite
-        # portals (screencasting, file pickers)
+        - tailscale
+        - wl-clipboard
         - xdg-desktop-portal-gnome
         - xdg-desktop-portal-gtk
-        # things niri's default binds / noctalia expect
-        - alacritty
-        - fuzzel
-        - wl-clipboard
-        - cliphist
-        - brightnessctl
-        - wlsunset
-        # fonts
+        - xwayland-satellite
         - google-noto-fonts-all
         - jetbrains-mono-fonts-all
-        # your existing picks
-        - micro
-        - starship
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -50,14 +42,33 @@ modules:
         - firefox
         - firefox-langpacks # also remove firefox dependency (not required for all packages, this is a special case)
 
+  - type: systemd
+    system:
+      enabled:
+        - tailscaled
+
   - type: default-flatpaks
     configurations:
       - notify: false # Send notification after install/uninstall is finished (true/false)
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
-          - org.mozilla.firefox
+          - com.discordapp.Discord
+          - com.github.wwmm.easyeffects
+          - com.nextcloud.desktopclient.nextcloud
+          - com.spotify.Client
+          - md.obsidian.Obsidian
+          - org.audacityteam.Audacity
+          - org.gimp.GIMP
           - org.gnome.Loupe
+          - org.libreoffice.LibreOffice
+          - org.mozilla.firefox
+          - org.videolan.VLC
       - scope: user # Also add Flathub user repo, but no user packages
+
+  - type: fonts
+    fonts:
+      nerd-fonts:
+        - DejaVuSansMono
 
   - type: signing # this sets up the proper policy & signing files for signed images to work fully
