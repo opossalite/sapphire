@@ -1,7 +1,7 @@
 ---
 # yaml-language-server: $schema=https://schema.blue-build.org/recipe-v1.json
 # image will be published to ghcr.io/<user>/<name>
-name: sapphire
+name: sapphireos
 # description will be included in the image's metadata
 description: Silverblue-based image focused around Niri and Noctalia.
 
@@ -23,6 +23,24 @@ modules:
         - atim/starship
     install:
       packages:
+        # compositor + shell
+        - niri
+        - noctalia
+        - xwayland-satellite
+        # portals (screencasting, file pickers)
+        - xdg-desktop-portal-gnome
+        - xdg-desktop-portal-gtk
+        # things niri's default binds / noctalia expect
+        - alacritty
+        - fuzzel
+        - wl-clipboard
+        - cliphist
+        - brightnessctl
+        - wlsunset
+        # fonts
+        - google-noto-fonts-all
+        - jetbrains-mono-fonts-all
+        # your existing picks
         - micro
         - starship
     remove:
@@ -34,7 +52,7 @@ modules:
 
   - type: default-flatpaks
     configurations:
-      - notify: true # Send notification after install/uninstall is finished (true/false)
+      - notify: false # Send notification after install/uninstall is finished (true/false)
         scope: system
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
