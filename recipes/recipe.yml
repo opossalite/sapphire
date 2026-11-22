@@ -57,6 +57,7 @@ modules:
           - com.discordapp.Discord
           - com.github.wwmm.easyeffects
           - com.nextcloud.desktopclient.nextcloud
+          - com.ranfdev.DistroShelf
           - com.spotify.Client
           - md.obsidian.Obsidian
           - org.audacityteam.Audacity
