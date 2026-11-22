@@ -1,8 +1,8 @@
 # SapphireOS &nbsp; [![bluebuild build badge](https://github.com/opossalite/sapphire/actions/workflows/build.yml/badge.svg)](https://github.com/opossalite/sapphire/actions/workflows/build.yml)
 
-See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
+Simple Atomic Fedora build based on Fedora Silverblue, focused on Niri and Noctalia.
 
-After setup, it is recommended you update this README to describe your custom image.
+> See the [BlueBuild docs](https://blue-build.org/how-to/setup/) for quick setup instructions for setting up your own repository based on this template.
 
 ## Installation
 
