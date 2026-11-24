@@ -25,6 +25,7 @@ modules:
       packages:
         - distrobox
         - gparted
+        - kitty
         - niri
         - noctalia
         - tailscale
