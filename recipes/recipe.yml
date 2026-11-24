@@ -32,6 +32,7 @@ modules:
         - xdg-desktop-portal-gnome
         - xdg-desktop-portal-gtk
         - xwayland-satellite
+        - zsh
         - google-noto-fonts-all
         - jetbrains-mono-fonts-all
     remove:
