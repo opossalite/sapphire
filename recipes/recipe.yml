@@ -55,16 +55,19 @@ modules:
         # If no repo information is specified, Flathub will be used by default
         install: # system flatpaks we want all users to have and not remove
           - com.discordapp.Discord
+          - com.github.tchx84.Flatseal
           - com.github.wwmm.easyeffects
           - com.nextcloud.desktopclient.nextcloud
           - com.ranfdev.DistroShelf
           - com.spotify.Client
+          - io.github.flattool.Warehouse
           - md.obsidian.Obsidian
           - org.audacityteam.Audacity
           - org.gimp.GIMP
           - org.gnome.Loupe
           - org.libreoffice.LibreOffice
           - org.mozilla.firefox
+          - org.nicotine_plus.Nicotine
           - org.videolan.VLC
       - scope: user # Also add Flathub user repo, but no user packages
 
