@@ -24,9 +24,6 @@ modules:
     install:
       packages:
         - distrobox
-        - fastfetch
-        - kitty
-        - neovim
         - niri
         - noctalia
         - tailscale
