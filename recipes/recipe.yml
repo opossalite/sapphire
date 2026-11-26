@@ -25,6 +25,7 @@ modules:
       packages:
         - distrobox
         - fastfetch
+        - gnome-keyring-pam
         - gparted
         - kitty
         - niri
@@ -37,6 +38,7 @@ modules:
         - zsh
         - google-noto-fonts-all
         - jetbrains-mono-fonts-all
+        
     remove:
       packages:
         # example: removing firefox (in favor of the flatpak)
@@ -66,6 +68,7 @@ modules:
           - org.audacityteam.Audacity
           - org.gimp.GIMP
           - org.gnome.Loupe
+          - org.inkscape.Inkscape
           - org.libreoffice.LibreOffice
           - org.mozilla.firefox
           - org.nicotine_plus.Nicotine
