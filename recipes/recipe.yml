@@ -32,6 +32,7 @@ modules:
         - gnome-keyring-pam
         - gparted
         - kitty
+        - neovim
         - niri
         - noctalia
         - tailscale
