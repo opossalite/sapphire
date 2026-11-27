@@ -5,15 +5,9 @@
         "type": "file",
         "source": "/usr/share/ublue-os/sapphireos-logo.txt",
         "color": {
-            "1": "#1e1e2e",
-            "2": "#313244",
-            "3": "#45475a",
-            "4": "#585b70",
-            "5": "#89b4fa",
-            "6": "#74c7ec",
-            "7": "#94e2d5",
-            "8": "#cba6f7",
-            "9": "#cdd6f4"
+            "1": "blue",
+            "2": "magenta",
+            "3": "cyan"
         },
         "padding": {
             "right": 4
